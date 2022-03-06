@@ -1,5 +1,5 @@
 import HeaderBar from '../components/HeaderBar';
-import StartCard from '../components/StatCard';
+import StatCard from '../components/StatCard';
 import BarGraph from '../components/BarGraph';
 import PieChart from '../components/PieChart';
 import { ChartData } from '../components/ChartData'
@@ -25,9 +25,9 @@ export default function Home() {
             <HeaderBar />
             <div className='flex flex-row ml-5 mt-5 mb-5  font-bold'><h1>Overview</h1></div>
             <div className='flex flex-row w-full flex-wrap justify-start'>
-                <StartCard/>
-                <StartCard />
-                <StartCard />
+                <StatCard/>
+                <StatCard />
+                <StatCard />
             </div>
             <div className='flex flex-row ml-5 mt-5 font-bold ' >
                 <h1>Sales vs Returns</h1></div>

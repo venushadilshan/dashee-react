@@ -41,9 +41,9 @@ Edit `Home.js`
             <div className='flex flex-row ml-5 mt-5 mb-5  font-bold'><h1>Overview</h1></div>
             <div className='flex flex-row w-full flex-wrap justify-start'>
             <!--Load your StatCards here. Max 3 -->
-                <StartCard/> 
-                <StartCard />
-                <StartCard />
+                <StatCard/> 
+                <StatCard />
+                <StatCard />
             </div>
             <div className='flex flex-row ml-5 mt-5 font-bold ' >
                 <h1>Sales vs Returns</h1></div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { HiCurrencyDollar } from "react-icons/hi"
 
-export default function StartCard() {
+export default function StatCard() {
     return (
         <div className="flex flex-col items-center w-1/4 mx-5 rounded-lg shadow-sm  p-5 duration-500 bg-white hover:bg-fuchsia-100 hover:shadow-md" >
             <div className="flex flex-row items-center w-full justify-between">
