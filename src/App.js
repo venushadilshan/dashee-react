@@ -4,8 +4,19 @@ import './App.css';
 import Sidebar from './components/Sidebar';
 import HeaderBar from './components/HeaderBar';
 import StartCard from './components/StatCard';
+import BarGraph from './components/BarGraph';
+import { useState } from 'react';
+import {ChartData} from '../src/components/ChartData'
 
 function App() {
+
+  const [chartData, setChartData] = useState({
+    labels: ChartData.map((data)=>data.month),
+    datasets:[{
+      label: "Sales vs Returns",
+      data: ChartData.map((data)=>data.Sale)
+    }]
+  });
   return (
     <div className='container'>
       <div className='flex flex-col w-screen h-screen'>
@@ -23,7 +34,7 @@ function App() {
             <StartCard />   
             </div>
             <div className='flex flex-row ml-10 font-bold mt-5'><h1>Sales vs Returns</h1></div>
-
+          <BarGraph chartData={chartData}/>
           </div>
 
         </div>
