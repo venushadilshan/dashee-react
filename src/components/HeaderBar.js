@@ -2,7 +2,7 @@ import React from "react";
 import profile_icon from "../assets/img/profile.svg";
 import {HiBell} from "react-icons/hi"
 export default function HeaderBar() {
-    return(<div className="w-auto h-full m-5 rounded-lg shadow-sm flex flex-row items-center justify-start pl-3 py-3 " style={{ background: "#ffff" }}>
+    return(<div className="w-auto h-full m-5 rounded-lg shadow-sm max-h-20 flex flex-row items-center justify-start pl-3 py-3 " style={{ background: "#ffff" }}>
         <div className="flex flex-row items-center  w-full justify-between">
            <div className="flex flex-row items-center"> 
            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
