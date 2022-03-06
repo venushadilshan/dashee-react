@@ -6,8 +6,9 @@ import Sidebar from './components/Sidebar';
 import { useState } from 'react';
 import { ChartData } from '../src/components/ChartData'
 
-import Page from './components/Page';
-import Home from './components/Home';
+import Page from '../src/components/Pages/Page';
+import Home from '../src/components/Pages/Home';
+import Statistics from './components/Pages/Statistics';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/page" element={<Page />} />
+          <Route path="/stats" element={<Statistics />} />
         </Routes>
 
 

@@ -1,8 +1,8 @@
-import HeaderBar from '../components/HeaderBar';
-import StatCard from '../components/StatCard';
-import BarGraph from '../components/BarGraph';
-import PieChart from '../components/PieChart';
-import { ChartData } from '../components/ChartData'
+import HeaderBar from '../HeaderBar';
+import StatCard from '../StatCard';
+import BarGraph from '../BarGraph';
+import PieChart from '../PieChart';
+import { ChartData } from '../ChartData'
 import { useState } from 'react';
 
 export default function Home() {

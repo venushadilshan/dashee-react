@@ -1,4 +1,4 @@
-import HeaderBar from "./HeaderBar";
+import HeaderBar from "../HeaderBar";
 
 export default function Page(){
     return ( <div className='flex flex-col w-full h-full p-5 '>
