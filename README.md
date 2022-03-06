@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Dashee: A Dashboard System for React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dashee is a Dashboard component collection for your React Projects. 
 
-## Available Scripts
+## Take a look
 
-In the project directory, you can run:
+<img src="https://i.ibb.co/nBJGxSp/localhost-3000.png" width="100%">
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What is inside? 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is still under development. So new components will be added progressively. For now below components are available.
 
-### `npm test`
+- Sidebar Menu
+- Stat Cards
+- Bar Chart
+- Doughnut Chart
+- Header Bar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Dependencies
+- Tailwind CSS v3.0.23
+- React Router
+- Chart.js 
+- React Icons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Customization 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can customize the dashboard by edtiting `App.js`. Currently all the relevant components are imported to the `App.js`. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Child components are loaded into `Home.js`. It is the component uses to display all child components at the Home route. (`\`)
 
-### `npm run eject`
+If you want to do some changes for the content, then go to `Home.js` and do the customizations. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Example
+Edit `Home.js`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        <div className='flex flex-col w-full h-screen p-5 overflow-y-scroll'>
+            <HeaderBar />
+            <div className='flex flex-row ml-5 mt-5 mb-5  font-bold'><h1>Overview</h1></div>
+            <div className='flex flex-row w-full flex-wrap justify-start'>
+            <!--Load your StatCards here. Max 3 -->
+                <StartCard/> 
+                <StartCard />
+                <StartCard />
+            </div>
+            <div className='flex flex-row ml-5 mt-5 font-bold ' >
+                <h1>Sales vs Returns</h1></div>
+            <div className='flex flex-row w-full'>
+            <!--Load your Charts here. You have to adjust the width of each chart component according to your layout -->
+                <BarGraph chartData={chartData} />
+                <PieChart chartData={chartData} />
+            </div>
+        </div> 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Chart data are loaded via state for the moment. You can use an API call to fetch data and load data to the chart. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you.

@@ -25,8 +25,7 @@ export default function Home() {
             <HeaderBar />
             <div className='flex flex-row ml-5 mt-5 mb-5  font-bold'><h1>Overview</h1></div>
             <div className='flex flex-row w-full flex-wrap justify-start'>
-
-                <StartCard type="1" />
+                <StartCard/>
                 <StartCard />
                 <StartCard />
             </div>
@@ -36,7 +35,6 @@ export default function Home() {
                 <BarGraph chartData={chartData} />
                 <PieChart chartData={chartData} />
             </div>
-
         </div>
     )
 }
