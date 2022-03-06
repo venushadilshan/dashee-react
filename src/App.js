@@ -7,6 +7,7 @@ import StartCard from './components/StatCard';
 import BarGraph from './components/BarGraph';
 import { useState } from 'react';
 import { ChartData } from '../src/components/ChartData'
+import PieChart from './components/PieChart';
 
 function App() {
 
@@ -23,28 +24,33 @@ function App() {
     }]
   });
   return (
-    <div className='container'>
-      <div className='flex flex-col w-screen h-screen'>
+   
+      <div className='flex flex-col w-auto h-full duration-500'>
         <div className='flex flex-row  h-full'>
           <div className='flex flex-col w-1/5'>
             <Sidebar /></div>
 
-          <div className='flex flex-col w-4/5 '>
+          <div className='flex flex-col w-full h-ful p-5 '>
             <HeaderBar />
-            <div className='flex flex-row ml-10 font-bold mb-2'><h1>Overview</h1></div>
+            <div className='flex flex-row ml-5 mt-5 mb-5  font-bold'><h1>Overview</h1></div>
             <div className='flex flex-row w-full flex-wrap justify-start'>
 
               <StartCard type="1" />
               <StartCard />
               <StartCard />
             </div>
-            <div className='flex flex-row ml-10 font-bold mt-5'><h1>Sales vs Returns</h1></div>
-            <BarGraph chartData={chartData} />
+            <div className='flex flex-row ml-5 mt-5 font-bold ' >
+              <h1>Sales vs Returns</h1></div>
+            <div className='flex flex-row w-full'>  
+             <BarGraph chartData={chartData} />
+              <PieChart chartData={chartData} />
+            </div>
+
           </div>
 
         </div>
       </div>
-    </div>
+  
   );
 }
 
