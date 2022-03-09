@@ -17,6 +17,7 @@ This project is still under development. So new components will be added progres
 - Bar Chart
 - Doughnut Chart
 - Header Bar
+- Tables
 
 
 ## Dependencies
@@ -24,6 +25,7 @@ This project is still under development. So new components will be added progres
 - React Router
 - Chart.js 
 - React Icons
+- React Data Table Component
 
 ## Customization 
 
