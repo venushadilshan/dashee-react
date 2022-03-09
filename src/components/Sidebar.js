@@ -24,7 +24,8 @@ export default function Sidebar() {
                 <div className='flex flex-row justify-start items-center w-full text-slate-900 mb-6 pl-10  p-2  hover:bg-fuchsia-200'> <HiChartSquareBar className='text-2xl' /> 
                 <p className={currentRoute.pathname=="/stats" ? active : inactive}  >
                     <Link to="/stats">Statistics</Link></p></div>
-                <div className='flex flex-row justify-start items-center w-full text-slate-900 mb-6 pl-10  p-2  hover:bg-fuchsia-200'> <HiViewGrid className='text-2xl' /> <p className='text-md ml-6 mx-10 '>Components</p></div>
+                <div className='flex flex-row justify-start items-center w-full text-slate-900 mb-6 pl-10  p-2  hover:bg-fuchsia-200'> <HiViewGrid className='text-2xl' /> <p className='text-md ml-6 mx-10 '>
+                    <Link to="/tables">Tables</Link></p></div>
                 <div className='flex flex-row justify-start items-center w-full text-slate-900 mb-6 pl-10  p-2  hover:bg-fuchsia-200'> <HiChartBar className='text-2xl' /> <p className='text-md ml-6 mx-10 '>Charts</p></div>
                 <div className='flex flex-row justify-start items-center w-full text-slate-900 mb-6 pl-10  p-2  hover:bg-fuchsia-200'> <HiCog className='text-2xl' /> <p className='text-md ml-6 mx-10 '>Settings</p></div>
 

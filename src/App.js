@@ -9,6 +9,7 @@ import { ChartData } from '../src/components/ChartData'
 import Page from '../src/components/Pages/Page';
 import Home from '../src/components/Pages/Home';
 import Statistics from './components/Pages/Statistics';
+import Tables from './components/Pages/Tables';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/stats" element={<Statistics />} />
+          <Route path="/tables" element={<Tables />} />
         </Routes>
 
 

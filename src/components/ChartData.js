@@ -41,4 +41,50 @@ export const ChartData =[
         Sale:200,
         Return:190
     },
+    {
+        id:7,
+        month:"July",
+        Sale:200,
+        Return:190
+    },
+    
+    {
+        id:7,
+        month:"July",
+        Sale:200,
+        Return:190
+    },
+    {
+        id:7,
+        month:"July",
+        Sale:200,
+        Return:190
+    },
+    {
+        id:7,
+        month:"July",
+        Sale:200,
+        Return:190
+    },
+    {
+        id:7,
+        month:"July",
+        Sale:200,
+        Return:190
+    },
+    {
+        id:7,
+        month:"July",
+        Sale:200,
+        Return:190
+    },
+    {
+        id:7,
+        month:"July",
+        Sale:200,
+        Return:190
+    },
+    
+    
+    
 ]
