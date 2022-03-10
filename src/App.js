@@ -18,7 +18,7 @@ function App() {
     <div className='flex flex-col w-auto h-full duration-500'>
 
       <div className='flex flex-row  h-full'>
-        <div className='flex flex-col w-1/5'>
+        <div className='flex flex-col lg:w-1/5 lg:m-0 '>
           <Sidebar />
         </div>
         <Routes>

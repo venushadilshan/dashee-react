@@ -21,7 +21,7 @@ export default function Home() {
     });
     return (
 
-        <div className='flex flex-col w-full h-screen p-5 overflow-y-scroll'>
+        <div className='flex flex-col w-full h-screen lg:p-5 overflow-y-scroll'>
             <HeaderBar />
             <div className='flex flex-row ml-5 mt-5 mb-5  font-bold'><h1>Overview</h1></div>
             <div className='flex flex-row w-full flex-wrap justify-start'>
@@ -31,7 +31,7 @@ export default function Home() {
             </div>
             <div className='flex flex-row ml-5 mt-5 font-bold ' >
                 <h1>Sales vs Returns</h1></div>
-            <div className='flex flex-row w-full'>
+            <div className='flex flex-row w-full flex-wrap lg:flex-nowrap'>
                 <BarGraph chartData={chartData} />
                 <PieChart chartData={chartData} />
             </div>
