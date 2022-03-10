@@ -24,12 +24,12 @@ export default function Tables()
    
     
     return(
-        <div className='flex flex-col w-full h-screen p-5 overflow-y-scroll'>
+        <div className='flex flex-col w-full h-screen lg:p-5 overflow-y-scroll'>
         <HeaderBar />
         <div className='flex flex-row ml-5 mt-5   font-bold'><h1>Sales And Returns</h1></div>
-        <div className='flex flex-row m-5 w-auto flex-wrap justify-start bg-white rounded-lg shadow-sm max-h-full p-3 items-center'>
+        <div className='flex flex-row lg:w-auto w-auto m-4 justify-center py-1 bg-white rounded-lg shadow-sm  lg:p-3 items-center'>
 
-            <div className="flex flex-col w-full h-full">
+            <div className="flex flex-col lg:w-full w-full h-full">
             <DataTable
             columns={columns}
             data={ChartData}
@@ -47,11 +47,7 @@ export default function Tables()
 
         </div>
 
-        <div className='flex flex-row w-full'>
-
-         
-
-        </div>
+       
     </div>
     )
 }

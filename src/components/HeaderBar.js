@@ -3,7 +3,7 @@ import profile_icon from "../assets/img/profile.svg";
 import {HiBell, HiMenu} from "react-icons/hi"
 export default function HeaderBar() {
     const [MenuStatus, setMenuStatus] = useState("")
-    return(<div className="w-auto h-full lg:m-5 m-2  rounded-lg shadow-sm max-h-20 flex flex-row items-center justify-start lg:pl-3 lg:py-3 p-2  bg-white" >
+    return(<div className="w-auto h-full lg:m-5 m-2  rounded-lg shadow-sm lg:max-h-20 h-14 flex flex-row items-center justify-start lg:pl-3 lg:py-3 p-2  bg-white" >
         <div className="flex flex-row items-center w-full justify-between">
            <div className="flex flex-row items-center"> 
          

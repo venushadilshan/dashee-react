@@ -43,7 +43,7 @@ export default function Statistics() {
 
             </div>
 
-            <div className='flex flex-row w-full'>
+            <div className='flex flex-row w-10/12 lg:full'>
 
                 <BarGraph chartData={chartData} />
 
