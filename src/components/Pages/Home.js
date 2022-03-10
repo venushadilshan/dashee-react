@@ -23,7 +23,7 @@ export default function Home() {
 
         <div className='flex flex-col w-full h-screen lg:p-5 overflow-y-scroll'>
             <HeaderBar />
-            <div className='flex flex-row ml-5 mt-5 mb-5  font-bold'><h1>Overview</h1></div>
+            <div className='flex flex-row ml-5 mt-5 mb-5  w-10 font-bold'><h1>Overview</h1></div>
             <div className='flex flex-row w-full flex-wrap justify-start'>
                 <StatCard/>
                 <StatCard />

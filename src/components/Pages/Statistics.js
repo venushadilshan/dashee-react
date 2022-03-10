@@ -18,10 +18,10 @@ export default function Statistics() {
         }]
     });
     return (
-        <div className='flex flex-col w-full h-screen p-5 overflow-y-scroll'>
+        <div className='flex flex-col w-full h-screen lg:p-5 overflow-y-scroll'>
             <HeaderBar />
-            <div className='flex flex-row ml-5 mt-5   font-bold'><h1>Statistics</h1></div>
-            <div className='flex flex-row m-5 w-auto flex-wrap justify-start bg-white rounded-lg shadow-sm max-h-72 p-3 items-center'>
+            <div className='flex flex-row ml-5 mt-5 font-bold'><h1>Statistics</h1></div>
+            <div className='lg:flex hidden flex-row m-5 w-auto flex-wrap justify-start bg-white rounded-lg shadow-sm max-h-72 p-3 items-center'>
 
                 <div className="flex flex-col">
                     <div className="flex flex-row"><p className="text-gray-600 text-sm ml-5 m-1">Date range </p>
