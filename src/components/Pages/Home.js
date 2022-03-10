@@ -31,7 +31,7 @@ export default function Home() {
             </div>
             <div className='flex flex-row ml-5 mt-5 font-bold ' >
                 <h1>Sales vs Returns</h1></div>
-            <div className='flex flex-row w-full flex-wrap lg:flex-nowrap'>
+            <div className='flex flex-row flex-wrap lg:flex-nowrap w-10/12 lg:w-full' >
                 <BarGraph chartData={chartData} />
                 <PieChart chartData={chartData} />
             </div>

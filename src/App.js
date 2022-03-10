@@ -12,6 +12,7 @@ import Statistics from './components/Pages/Statistics';
 import Tables from './components/Pages/Tables';
 
 function App() {
+  
 
   return (
 
@@ -20,10 +21,13 @@ function App() {
       <div className='flex flex-row h-full w-full '>
         <div className='flex flex-col lg:w-1/5 lg:m-0 '>
           <Sidebar />
+          
+         
         </div>
         <div className='flex flex-col w-full lg:m-0 '>
         <Routes>
           <Route path="/" element={<Home />} />
+          
           <Route path="/stats" element={<Statistics />} />
           <Route path="/tables" element={<Tables />} />
         </Routes>
